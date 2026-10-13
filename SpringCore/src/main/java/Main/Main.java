@@ -10,12 +10,12 @@ public class Main {
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("springbeans.xml");
 
-		Employee emp = context.getBean(Employee.class);
+		Employee emp = context.getBean("emp", Employee.class);
 
-		emp.setId(123);
-		emp.setName("Ajyaa");
-		emp.setAge(22);
-		emp.setCity("BEED");
+//		emp.setId(123);
+//		emp.setName("Ajyaa");
+//		emp.setAge(22);
+//		emp.setCity("BEED");
 
 		System.out.println(emp);
 	}

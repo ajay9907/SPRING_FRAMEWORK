@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+
+	<!-- their are we have two options we can set values using xml tags 1. property 
+		tag and its attribute also 2. constructor-args tag and its attributes -->
+
+
+	<!-- used property tag -->
+
+
+	<!-- <bean class="Entity.Employee" id="emp"> <property name="id" value="123"/> 
+		<property name="name" value="Amar"/> <property name="city" value="BEED"/> 
+		<property name="age" value="21"/> </bean> -->
+
+	<!-- used constructor-args -->
+
+	<bean class="Entity.Employee" id="emp">
+		<constructor-arg index="0" value="1212" />
+		<constructor-arg index="1" value="Ajyaa" />
+		<constructor-arg index="2" value="PCMC" />
+		<constructor-arg index="3" value="25" />
+
+	</bean>
+	<!-- bean definitions here -->
+
+</beans>

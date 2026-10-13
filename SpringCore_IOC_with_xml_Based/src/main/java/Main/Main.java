@@ -12,10 +12,18 @@ public class Main {
 
 		Employee emp = context.getBean("emp", Employee.class);
 
+		Employee emp1 = context.getBean("emp", Employee.class);
+
 //		emp.setId(123);
 //		emp.setName("Ajyaa");
 //		emp.setAge(22);
 //		emp.setCity("BEED");
+
+//		System.out.println(emp == emp1);
+
+		System.out.println(emp.hashCode());
+
+		System.out.println(emp1.hashCode());
 
 		System.out.println(emp);
 	}

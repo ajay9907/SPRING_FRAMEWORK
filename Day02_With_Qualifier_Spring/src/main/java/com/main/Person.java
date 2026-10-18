@@ -1,14 +1,17 @@
 package com.main;
 
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Person {
 
-	@Value(" Sim1 ")
-	Airtel atl;
-	@Value("Sim2")
+	@Autowired
+	@Qualifier("airtel")
+	Airtel airtel;
+	@Autowired
+	@Qualifier("jio")
 	JIO jio;
 
 	public Person() {
@@ -17,16 +20,16 @@ public class Person {
 
 	public Person(Airtel atl, JIO jio) {
 		super();
-		this.atl = atl;
+		this.airtel = atl;
 		this.jio = jio;
 	}
 
 	public Airtel getAtl() {
-		return atl;
+		return airtel;
 	}
 
 	public void setAtl(Airtel atl) {
-		this.atl = atl;
+		this.airtel = atl;
 	}
 
 	public JIO getJio() {

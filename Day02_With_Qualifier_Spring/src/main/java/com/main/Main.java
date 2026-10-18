@@ -8,8 +8,9 @@ public class Main {
 
 		ApplicationContext context = new AnnotationConfigApplicationContext(myConfigClass.class);
 		Person per = context.getBean(Person.class);
-		per.getJio().calling();
-		per.getAtl().calling();
+		System.out.println(per.getAtl().calling());
+		System.out.println(per.getJio().calling());
+
 	}
 
 }

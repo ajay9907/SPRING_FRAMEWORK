@@ -6,8 +6,8 @@ import org.springframework.stereotype.Component;
 public class JIO implements SimCard {
 	@Override
 
-	public void calling() {
-		System.out.println("Calling on Airtel...");
+	public String calling() {
+		return "Calling on jio...";
 
 	}
 

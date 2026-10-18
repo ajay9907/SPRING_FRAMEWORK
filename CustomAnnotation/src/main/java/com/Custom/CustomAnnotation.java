@@ -4,6 +4,7 @@ public class CustomAnnotation {
 	public @interface MyAnnotation {
 	}
 
+	@MyAnnotation
 	public void show() {
 		System.out.println("It is an Custom Annotation.");
 	}
